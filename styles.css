@@ -1,0 +1,233 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #a855f7;
+  transition: 0.3s;
+}
+nav .logo a:hover {
+  color: #7d0ee5;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  /* text-decoration: none; */
+  font-weight: 600;
+  color: #1f2937;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: #9333ea;
+  border-bottom-color: #9333ea;
+  color: #9333ea;
+}
+
+.section {
+  background-color:#faf5ff;
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: #1f2937;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+.action-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.action-btns button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid #a855f7;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hire-me {
+  background-color: #a855f7;
+  color: #ffffff;
+  position: relative;
+  /* opacity: 1; */
+}
+.hire-me .tooltip{
+  position: absolute;
+  color: white;
+  font-size: 15px;
+  background-color: gray;
+  pointer-events: none;
+  padding: 4px;
+  border-radius: 4px;
+  bottom: -100px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  /* white-space: nowrap; */
+}
+.hire-me:hover .tooltip{
+  opacity: 1;
+  
+}
+.hire-me:hover {
+  background-color: #faf5ff;
+  color: #a855f7;
+}
+
+.portfolio {
+  color: #a855f7;
+}
+
+.portfolio:hover {
+  background-color: #9333ea;
+  color: #ffffff;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.profile{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 300px;
+}
+
+@media (width < 750px) {
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color:#faf5ff;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .action-btns {
+    margin: auto;
+  }
+}
+.lower-body{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.linkedin,.instagram,.twitter{
+  cursor: pointer;
+}
+.linkedin:hover,.instagram:hover,.twitter:hover{
+  color: rgb(198, 196, 196);
+}
+.lower-body div{
+  margin-right: 20px;
+}
+.lower-body div span{
+  margin-right: 10px;
+}
+.lower-body div span:active{
+
+}
+.hiring-container{
+  
+}

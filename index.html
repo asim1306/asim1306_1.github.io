@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function myfunc(){
+        location.replace("https://www.google.com")
+      }
+      function mylinkedin() {
+        location.replace("https://www.w3schools.com")
+      }
+      function myinsta(){ 
+        location.replace("https://www.w3schools.com")
+      }
+      function mytwitter() {
+        location.replace("https://www.w3schools.com")
+      }
+      function myportfolio() {
+        location.replace("http://127.0.0.1:5500/index.html")
+      }
+      function myhireme(){
+        location.replace("http://127.0.0.1:5500/hireme.html")
+        /* in this page i'll add something */
+      }
+      function myaboutme(){
+        location.replace("http://127.0.0.1:5500/aboutme.html")
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">AsimKalim</a></div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about" onclick="myaboutme()" target="_blank">About</a></li>
+          <li><a href="#portfolio" onclick="myportfolio()">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+            I'm <span>Asim Kalim<br />a</span> Web Developer
+          </h1>
+          <p class="description">
+            Welcome to my web developer portfolio! I'm Asim Kalim, a skilled and
+            creative web developer with a passion for creating beautiful,
+            responsive, and user-friendly websites. 
+          </p>
+          <div class="action-btns">
+            <button class="hire-me" onclick="myhireme()" target="_blank">
+              Hire Me
+              <div class="tooltip">Click to send hiring msg.</div>
+            </button>
+            <button class="portfolio" onclick="myportfolio()">Portfolio</button>
+          </div>
+        </div>
+        <div class="image">
+          <img class="profile" src="selfie.jpg">
+        </div>
+      </div>
+    </section>
+    <div id="#contact" class="lower-body">
+      <div class="contact"><u>Contact no. </u>:- 9582716428</div>
+      <div><u>Email id</u> :- iit2023219@iiita.ac.in</div>
+      <div>
+        <u>Connect me on</u> :- <span class="linkedin" onclick="mylinkedin()" target="_blank">Linkedin</span> 
+        <span class="instagram" onclick="myinsta()" target="_blank">Instagram</span> 
+        <span class="twitter" onclick="mytwitter()" target="_blank">Twitter</span>
+      </div>
+    </div>
+  </body>
+</html>

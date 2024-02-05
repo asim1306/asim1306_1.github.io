@@ -1,0 +1,206 @@
+body{
+  font-family: Poppins;
+  margin-bottom: 50px;
+  height: 860px;
+}
+.section_container{
+  min-height: 100vh;
+  max-width: 1500px;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+.aboutme-header{
+  position: absolute;
+  font-family: Honk;
+  left: 650px;
+  right: 100px;
+  font-size: 60px;
+  color: orange;
+  font-weight: 500;
+  top: 8px;
+  z-index: 100;
+}
+
+.achievements{
+  background-color: orange;
+  display: flex;
+  /* flex: 1; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: black;
+  top: 30px;
+  left: 20px;
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  list-style: none;
+  animation-name: achievements;
+  animation-duration: 4s;
+}
+
+.ach-header{
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Honk;
+}
+.personal-info{
+  background-color: orange;
+  display: flex;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 480px;
+  left: 20px;
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  list-style: none;
+  animation-name: personal-info;
+  animation-duration: 4s;
+}
+
+.personal-info-header{
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Honk;
+}
+.right-section{
+  display: flex;
+  flex-direction: column;
+}
+.right-container{
+  flex: 1;
+}
+.hobbies{
+  background-color:orange;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  list-style: none;
+  animation-name: hobbies;
+  animation-duration: 4s;
+}
+
+.hob-header{
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Honk;
+}
+.skills{
+  background-color: orange;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 480px;
+  right: 20px;
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  list-style: none;
+  animation-name: skills;
+  animation-duration: 4s;
+}
+
+.skills-header{
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Honk;
+}
+.center-section{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  min-height: 80vh;
+  position: absolute;
+  top: 150px;
+  background-color: orange;
+  bottom: 250px;
+  left: 500px;
+  right: 500px;
+}
+.profile-pic{
+  padding-bottom: 20px;
+  width: 180px;
+  height: 190px;
+  border-radius: 90px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.profile-pic:hover{
+  padding-top: 20px;
+}
+.name{
+  font-size: 40px;
+  font-weight: 600;
+  font-family: Honk;
+}
+.biodata-container{
+  margin-left: 10px;
+  width: 350px;
+  margin-bottom: 30px;
+}
+.biodata{
+  white-space: nowrap;
+  margin-left: 85px;
+  font-size: 17px;
+  width: 260px;
+  font-weight: 500;
+  color: black;
+  margin-top: 70px;
+  font-family: Protest Revolution;
+}
+.quote-container{
+  margin-left: 90px;
+  margin-top: 130px;
+  margin-right: 10px;
+}
+.quote{
+  font-family: Protest Riot;
+  font-size: 26px;
+  color: black;
+}
+
+@media (width < 750px) {
+  .aboutme-header,
+  .achievements,
+  .personal-info,
+  .center-section,
+  .hobbies,
+  .skills {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color:#faf5ff;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
