@@ -1,0 +1,67 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+} 
+body { 
+  background: #eae9e8; 
+  font-size: 12px; 
+  font-family: Roboto;
+} 
+h1{
+  font-size: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  text-decoration: underline;
+}
+.container { 
+  flex: 0 1 700px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  padding: 10px; 
+} 
+
+input { 
+  margin: 10px; 
+} 
+.form-control{
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 22px;
+  box-shadow: 1px 1px 2px 1px #888888;
+}
+.percentage-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.form-button{
+  padding: 5px;
+  border-radius: 11px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 15px;
+  border-style: solid;
+  border-width: 1px;
+}
+.form-button:hover{
+  background-color: rgb(133, 130, 130);
+}
+.form-group-showdata{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#showdata { 
+  color: black; 
+  font-size: 1.2rem; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  margin-left: 15px;
+  font-family: Poppins;
+  color: rgb(221, 123, 221);
+} 
