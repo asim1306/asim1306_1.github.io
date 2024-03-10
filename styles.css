@@ -11,6 +11,7 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
+  height: 1400px;
 }
 
 nav {
@@ -26,7 +27,6 @@ nav {
   margin: auto;
   padding: 1.5rem 1rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -51,7 +51,6 @@ ul {
 ul li a {
   padding: 0.5rem 1rem;
   border: 2px solid transparent;
-  /* text-decoration: none; */
   font-weight: 600;
   color: #1f2937;
   transition: 0.3s;
@@ -129,9 +128,9 @@ ul li a:hover {
   background-color: #a855f7;
   color: #ffffff;
   position: relative;
-  /* opacity: 1; */
+  white-space: nowrap;
 }
-.hire-me .tooltip{
+.tooltip{
   position: absolute;
   color: white;
   font-size: 15px;
@@ -139,29 +138,31 @@ ul li a:hover {
   pointer-events: none;
   padding: 4px;
   border-radius: 4px;
-  bottom: -100px;
+  bottom: 50px;
   opacity: 0;
   transition: opacity 0.5s;
-  /* white-space: nowrap; */
 }
 .hire-me:hover .tooltip{
   opacity: 1;
-  
 }
 .hire-me:hover {
   background-color: #faf5ff;
   color: #a855f7;
 }
 
+
 .portfolio {
   color: #a855f7;
 }
 
+
+.portfolio:hover .tooltip{
+  opacity: 1;
+}
 .portfolio:hover {
   background-color: #9333ea;
   color: #ffffff;
 }
-
 .image {
   display: grid;
   place-items: center;
@@ -201,6 +202,37 @@ ul li a:hover {
     margin: auto;
   }
 }
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+.proj-header{
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.proj-img{
+  width: 500px;
+  object-fit: contain;
+}
+.proj-img:hover{
+  width: 550px;
+}
 .lower-body{
   position: fixed;
   bottom: 0;
@@ -225,9 +257,4 @@ ul li a:hover {
 .lower-body div span{
   margin-right: 10px;
 }
-.lower-body div span:active{
 
-}
-.hiring-container{
-  
-}
