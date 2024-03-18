@@ -11,7 +11,8 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 1700px;
+  height: 2000px;
+  padding: 8px;
 }
 
 nav {
@@ -202,12 +203,20 @@ ul li a:hover {
     margin: auto;
   }
 }
-div.scrollmenu {
+.scrollmenu {
   background-color: #333;
   overflow: auto;
   white-space: nowrap;
+  margin-bottom: 50px;
+  margin-top: 20px;
 }
-
+.blog-project{
+  margin-bottom: 50px;
+  margin-top: 20px;
+  width: 560px;
+  height: 260px;
+  background-color: #333;
+}
 div.scrollmenu a {
   display: inline-block;
   color: white;
@@ -229,9 +238,26 @@ div.scrollmenu a:hover {
 .proj-img{
   width: 500px;
   object-fit: contain;
+  background-size: cover;
+  padding: 10px;
 }
 .proj-img:hover{
   width: 550px;
+}
+.blog-img{
+  width: 500px;
+  object-fit: contain;
+  background-size: cover;
+  /* background-image: url(blog1.jpg); */
+  transition: background-image 0.3s ease-in-out;
+  padding: 10px;
+}
+.blog-img:hover{
+  width: 515px;
+  background-image: url(blog2.jpg);
+}
+.projects-desc{
+  margin-left: 18px;
 }
 .lower-body{
   position: fixed;
